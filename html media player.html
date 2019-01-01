@@ -1,0 +1,75 @@
+
+<!Doctype html>
+<html>
+
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="media player controller.js"></script>
+		<title>
+			HTML Media player
+		</title>
+		<link rel="stylesheet" href="media player style.css">
+		
+	</head>
+
+	<div class="topnav">
+	  <a id="watch-video-button">Video</a>
+	  <a id="listen-audio-button">Audio</a>
+	</div>
+	
+	<body>
+		<center>
+		<div style="display:none;" id="video-div">
+			<video width="50%" height="50%" controls id="vid1" style="margin-top:5%">
+			  <source src="">
+			  Your browser does not support the <code>video</code> element.
+			</video>
+		</div>
+		
+		<center>
+		<div style="display:none;" id="audio-div">
+			<audio width="50%" height="50%" controls id="aud1" style="margin-top:5%">
+			  <source src="">
+			  Your browser does not support the <code>audio</code> element.
+			</audio>
+		</div>
+		
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		
+		<div id="status-div">
+		     <h2 align="center"><font face="Comic Sans MS" color="green"><b>TS Media Player</b></font></h2>
+			<i><h2>Click <u>video</u> or <u>audio</u> to watch in TS Media player</i></h2>
+			
+			<img src="cap1.png" alt="Smileyi face" align="middle" width="250" height="200">
+			<img src="cap.png" alt="Smiley face" align="middle" width="350" height="300">
+			<img src="cap3.png" alt="Smileyi face" align="middle" width="250" height="200">
+			<p><font face="Comic Sans MS" color="violet">“Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.”</font></p>
+		</div>
+		</br>
+		
+		<center>
+		<div style="display:none; margin-left:33%;" id="submit-video-div">
+			<form style="float:left">
+				<input type="file" name="video-upload" type="video-upload" id="video-input1" 
+					accept=".mp4,.ogg,.webm">
+				<label for="file-upload"> Submit video file </label>
+			</form>
+			<button id="submit-button1" style="float:left"> Submit </button>
+		</div>
+		
+		<center>
+		<div style="display:none; margin-left:35%;" id="submit-audio-div">
+			<form style="float:left">
+				<input type="file" name="audio-upload" type="audio-upload" id="audio-input1" 
+					accept=".mp3,.mpeg,.ogg,.wav">
+				<label for="file-upload"> Submit audio file </label>
+			</form>
+			<button id="submit-button2" style="float:left"> Submit </button>
+		</div>
+		
+	</body>
+
+</html>
